@@ -1,37 +1,38 @@
 class Buch {
+    Titel
+    Verlag
+    Seitenanzahl
+    vorhanden = 69
+    Autor
+    Genre
 
-    titel
-    autor
-    seitenzahl
-    hersteller
-    verlag
-    genre
-    vorhanden = 20
-
-    constructor(titel, autor, hersteller, verlag, genre, anzahl, seitenzahl,) {
-        this.hersteller = hersteller
-        this.titel = titel
-        this.autor = autor
-        this.seitenzahl = seitenzahl
-        this.genre = genre
-        this.vorhanden = anzahl
-        this.verlag = verlag
+    constructor(Titel, Verlag, Seitenanzahl, Autor, Genre, Anzahl ) {
+        this.Autor = Autor
+        this.Titel = Titel
+        this.Verlag = Verlag
+        this.Seitenanzahl = Seitenanzahl
+        this.Genre = Genre
+        this.vorhanden = Anzahl
     }
 
-  verfuegbar(){
-        if(this.vorhanden > 0 ){
+    verfuegbar(){
+        if(this.vorhanden > 0){
+            console.log("Es sind noch "+ this.vorhanden +" vorhanden")
+        } else {console.log("Keine Bücher sind vorhanden")
+        }
 
-            console.log(("Es sind noch" + "" + this.vorhanden + "Bücher vorhanden"))
-}else{ }
+    }
+    verkauft(){
+        this.vorhanden = 69-1
+    }
 
 }
-
-
-
+function harrypotter(){
+    buch1 = new Buch(
+    )
+    this.vorhanden = 20
 }
-
-function HarryOtter(){
-
-    buch1 = new Buch
-}
+harrypotter.verkauft()
+buch = new Buch("5", 5, 5, 5, 5, 5)
+buch.verfuegbar()
 
