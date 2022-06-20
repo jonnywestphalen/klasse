@@ -25,7 +25,6 @@ class Buch {
     verkauft(){
         this.vorhanden = 69-1
     }
-
 }
 function harrypotter(){
     buch1 = new Buch(
