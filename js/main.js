@@ -35,3 +35,8 @@ harrypotter.verkauft()
 buch = new Buch("5", 5, 5, 5, 5, 5)
 buch.verfuegbar()
 
+lager = ["Titel", "Verlag", "Seitenanzahl", "Autor"]
+
+function ausDemSortiment(Titel){
+
+}
